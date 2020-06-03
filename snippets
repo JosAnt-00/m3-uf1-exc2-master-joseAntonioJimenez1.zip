@@ -1,0 +1,141 @@
+gcd(1032,180)
+gcd(275,9)
+gcd(150,39)
+gcd(300,70)
+gcd(54,8)
+factorial(4);
+factorial(3);
+numbers
+getArray(numbers);
+numbers
+numeroEncontar(numbers,4);
+numbers
+numeroEncontar(numbers,2);
+printChars(75,90);
+printChars(40,90);
+printChars(65,90);
+printChars(70,90);
+printChars(65,90);
+int gcd(int n,int m){
+int dividendo =m;
+int divisor =n;
+int residuo = m%n;
+int cociente = m/n;
+if(n<m||n>m){
+ if(m%n!=0||n%m!=0){
+  while(residuo >0){
+   dividendo=divisor;
+   divisor=residuo;
+   residuo= dividendo%divisor;
+   cociente=dividendo/divisor;
+  }
+ }else{
+  return divisor;
+ }
+}
+return divisor;
+}
+gcd(1032,180)
+gcd(275,9)
+gcd(150,39)
+gcd(300,70)
+gcd(54,8)
+int factorial(int n){
+if(n<0){
+ return -1;
+}
+if(n==0){
+ return 1;
+}else{
+ return n*(factorial(n-1));
+}
+}
+factorial(4);
+factorial(3);
+int[]numbers={1,2,3,4};
+getArray(numbers);
+int getArray(int[]a){
+int arr=0;
+for(int i=0;i<a.length;i++){
+ arr=i;
+}
+return arr;
+}
+numbers
+getArray(numbers);
+boolean numeroPar(int[]arr,int number){
+boolean founded=false;
+ for(int i=0;i<arr.length;i++){ 
+  if(arr[i]==number){
+   founded=true;
+   print("numero trobat a la posicio "+i);
+   }
+  }
+return founded;
+}
+numbers
+numeroEncontar(numbers,4);
+boolean numeroEncontar(int[]arr,int number){
+boolean founded=false;
+ for(int i=0;i<arr.length;i++){ 
+  if(arr[i]==number){
+   founded=true;
+   print("numero trobat a la posicio "+i +"  ");
+   }
+  }
+return founded;
+}
+numeroEncontar(numbers,4);
+numbers
+numeroEncontar(numbers,2);
+printChars(65,90);
+printChars(75,90);
+void printChars(int a, int b){
+if(a<65||b<65||a>90||b>90){
+ print("Error: Enter fora del rang [65-90]");
+}else{
+for(int i=a;i<=b;i++){
+ print((char)i+" ");
+}
+}
+}
+printChars(75,90);
+printChars(40,90);
+printChars(65,90);
+void printChars(int a,int... b){
+int[]values={65,66,67,68,69,80,81,82,83,84,85,86,87,88,89,90};
+ for(int i:b){
+ print((char)i);
+  }
+ }
+printChars(70,90);
+printChars(65,90);
+isPrime(5);
+void isPrime(int n){
+if(n>=2){
+ if(n==2){
+  print("true");
+ }else{
+  for(int i=2;i<n;i++){
+   if(n%n==0 && n%1==0 && n%i==0){
+    print("FALSE");
+   }
+  }
+  if(n%n==0&&n%1==0){
+   print(" true ");
+  }
+ }
+}else{
+ print(" false ");
+}
+}
+isPrime(5);
+isPrime(3);
+isPrime(2);
+isPrime(4);
+isPrime(6);
+isPrime(7);
+isPrime(8);
+isPrime(9);
+isPrime(10);
+isPrime(11);
